@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>السيرة الذاتية -  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#1f6feb;
+      --muted:#6b7280;
+      --radius:14px;
+      --maxw:900px;
+      --gap:18px;
+      font-family: 'Cairo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{background:var(--bg);margin:20px;display:flex;justify-content:center;color:#0f1724}
+    .container{max-width:var(--maxw);width:100%;}
+    .card{background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:0 6px 20px rgba(12,16,30,0.08)}
+    header{display:flex;gap:var(--gap);align-items:center}
+    .avatar{flex:0 0 140px}
+    .avatar img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:6px solid #fff;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+    .profile-info{flex:1}
+    .name{font-size:25px;font-weight:700;margin-bottom:6px}
+    .title{font-weight:600;color:var(--muted);margin-bottom:10px}
+    .contact{display:flex;gap:10px;flex-wrap:wrap}
+    .contact span{background:#f1f5f9;padding:8px 10px;border-radius:8px;font-size:14px;color:var(--muted)}
+    main{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:20px}
+    .section{background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));padding:18px;border-radius:12px}
+    h2{font-size:16px;margin:0 0 10px 0;color:var(--accent)}
+    p{margin:0;color:#111827}
+    .left .section{margin-bottom:16px}
+    .job{margin-bottom:14px}
+    .job h3{margin:0;font-size:15px}
+    .job .meta{color:var(--muted);font-size:13px;margin-top:4px}
+    .bullets{margin-top:8px;padding-inline-start:18px}
+    .right .box{margin-bottom:14px}
+    .skill{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .skill .bar{height:8px;background:#eef2ff;border-radius:999px;flex:1;margin-left:10px;overflow:hidden}
+    .skill .bar > i{display:block;height:100%;background:var(--accent);border-radius:999px}
+    .tag{display:inline-block;padding:6px 10px;background:#f1f5f9;border-radius:999px;margin:4px 4px 0 0;font-size:13px}
+    @media (max-width:880px){
+      main{grid-template-columns:1fr}
+      .avatar img{width:110px;height:110px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">
+          <!-- ضع صورتك هنا بنفس اسم الملف profile.jpg أو عدّل المسار -->
+          <img src="aaa.jpg" alt="صورة شخصية">
+        </div>
+        <div class="profile-info">
+          <div class="name"> هايل نشوان محمود هايل سلام</div>
+          <div class="title">طالب نظم معلومات إدارية</div>
+          <div class="contact">
+            <span>هاتف:776456530 </span>
+            <span> hayl@gmail.com </span>
+            <span>إب القاعدة اليمن</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="left">
+          <div class="section">
+            <h2>نبذة شخصية</h2>
+            <p> طالب نظم معلومات إدارية أتمتع بمهارات قوية في إدارة المشاريع وتحسين العمليات وأبحث عن فرص لتطبيق مهاراتي في بيئة منفتحة على التطوير.</p>
+          </div>
+
+          
+
+          <div class="section">
+            <h2>التعليم</h2>
+            <div style="margin-bottom:8px">
+              <strong>بكالوريوس نظم معلومات إدارية</strong>
+              <div class="meta">جامعة الحكمة 2023 _2027</div>
+            </div>
+          </div>
+
+          
+
+        <aside class="right">
+          <div class="section box">
+            <h2>المهارات</h2>
+            <div class="skill">
+              <div>تحليل بيانات</div>
+              <div class="bar"><i style="width:85%"></i></div>
+            </div>
+            <div class="skill">
+              <div>نظم المعلومات</div>
+              <div class="bar"><i style="width:80%"></i></div>
+            </div>
+            <div class="skill">
+              <div>HTML / CSS</div>
+              <div class="bar"><i style="width:70%"></i></div>
+            </div>
+            <div class="skill">
+              <div>C++</div>
+              <div class="bar"><i style="width:60%"></i></div>
+            </div>
+          </div>
+
+          <div class="section box">
+            <h2>اللغات</h2>
+            <div class="tag">العربية (اللغة الأم)</div>
+            <div class="tag">الإنجليزية - متوسط</div>
+          </div>
+
+          <div class="section box">
+            <h2>الهوايات</h2>
+            <p>القراءة، تطوير الويب، والرياضة.</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
